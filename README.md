@@ -10,7 +10,7 @@
 <h1 align="center">🅱️ Bootstrap-Education-Landing-Page</h1>
 
 <p align="center">
-A responsive single-page website built with Bootstrap 5, featuring modern UI components and custom styling.
+🎓 Responsive Education Landing Page built with Bootstrap 5. Highlights the effective use of Bootstrap's grid system, utility classes, and interactive components like Carousels, Modals, and Tabs for a seamless user experience.
 </p>
 
 <div align="center">
