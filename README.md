@@ -26,7 +26,7 @@ A responsive single-page website built with Bootstrap 5, featuring modern UI com
 </div>
 
 <p align="center">
-  <a href="https://umit8098.github.io/Project-Bootstrap-Single-Page-Website/">
+  <a href="https://umitarat-dev.github.io/Bootstrap-Education-Landing-Page/">
     <img src="img/spw.gif" alt="Project-Bootstrap-Single-Page-Website" width="800"/>
   </a>
 </p>
