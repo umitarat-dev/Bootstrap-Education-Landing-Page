@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/Deployment-GitHub%20Pages-222222?logo=githubpages&logoColor=white" />
 </p>
 
-<h1 align="center">📌 Bootstrap-Education-Landing-Page</h1>
+<h1 align="center">🅱️ Bootstrap-Education-Landing-Page</h1>
 
 <p align="center">
 A responsive single-page website built with Bootstrap 5, featuring modern UI components and custom styling.
