@@ -1,0 +1,147 @@
+:root {
+    --red: #dc3545;
+  }
+
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+  /*! --------- 1- NAVBAR --------------- */
+  .navbar-light {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(59, 59, 59);
+    transition: color 1s;
+  }
+  /* .navbar .nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(59, 59, 59);
+    transition: color 1s;
+  } */
+
+  .navbar .nav-item .nav-link:hover {
+    color: var(--red);
+  }
+
+  .navbar-brand {
+    width: 10rem;
+    text-transform: none;
+    color: white
+  }
+
+  .navbar-brand img {
+    width: 3rem;
+    /* background-color: #dc3545; */
+  }
+
+.brand-text {
+  color: #ff5733; /* istediğin renk */
+  font-size: 2rem;
+}
+
+  /*! --------- 2- CAROUSEL ------------- */
+  .carousel-item {
+    /* border: 3px solid red; */
+    /* height: calc(100vh - 88px); */
+    max-height: calc(100vh - 88px);
+  }
+
+  .carousel-item h2 {
+    color: var(--red);
+    text-shadow: 2px 2px 2px rgb(66, 2, 2);
+
+  }
+
+  .carousel-item p {
+    color: white;
+    font-weight: 500;
+  }
+
+  .carousel-item .buttons .btn {
+    width: 7rem;
+    margin-bottom: 1rem;
+  }
+
+  .carousel-indicators button {
+    /* background-color: var(--red); */
+    background-color: var(--red) !important;
+    height: 0.4rem !important;
+    width: 3rem !important;
+    margin-right: 0.7rem !important;
+  }
+
+  .carousel-caption {
+    bottom: 5rem;  /* 20vh */
+  }
+  
+  /*! --------- 3- ABOUT SECTION -------- */
+
+  /*! --------- 4- INTSTRUCTORS SECTION -------- */
+  section#instructors .socials i {
+    transition: opacity 1s;
+  }
+  section#instructors .socials i:hover {
+    opacity: 0.5;
+  }
+
+  section#instructors .card {
+    transition: transform 0.5s;
+  }
+
+  section#instructors .card:hover {
+    transform: scale(1.05);
+  }
+
+  /* section#instructors .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s;
+  } */
+
+  /*! --------- 5- STUDENTS SECTION -------- */
+  
+  /*! --------- 6- COURSES SECTION ---------- */
+  section#courses .nav-link {
+    color: white;
+  }
+  section#courses .nav-link.active{
+    background-color: var(--red);
+  }
+  
+  /*! --------- 7- CONTACT SECTION --------- */
+  section#contact i {
+    color: var(--red);
+    font-size: 2rem;
+  }
+  
+  /*! --------- 8- FOOTER ------------ */
+  footer i {
+    font-size: 2rem;
+    color: white;
+    margin-right: 1rem;
+    transition: color 0.2s;
+  }
+  footer i:hover {
+    color: var(--red);
+  }
+
+  /*! --------- 9- UP-BUTTON ------------ */
+  .up-btn {
+    color: white;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2rem;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: var(--red);
+    text-align: center;
+    padding: 0.6rem;
+    font-size: 1.4rem;
+  }

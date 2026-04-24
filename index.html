@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UmitDev-Bootstrap</title>
+
+    <!-- Bootstrap CSS Linki -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- FontAwesome Libray -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body id="body">
+    <!------------ NAVBAR ------------>
+    <nav class="navbar 
+                navbar-expand-md
+                navbar-light
+                bg-body-tertiary
+                ">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <!-- <img src="./img/CLARUSWAY_LOGO.png" alt="CLARUSWAY_LOGO"> -->
+          <img src="./img/design.svg" alt="design"> 
+          <span class="brand-text ms-2">UmitDev</span>
+        </a>
+        
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Sağ Taraf Hizalama -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 me-3 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#students">Students</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <!------------ CAROUSEL - SLIDER ------------>
+    <div 
+      id="carouselExampleCaptions" 
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="20000"
+    >
+    <!-- data-bs-ride -> false ise image'ları otomatik çevirmez.  -->
+    <!-- data-bs-ride -> image'ları otomatik çevir  -->
+    <!-- data-bs-interval -> image'ların görüntülenme süresi genel,  -->
+    <!-- data-bs-interval -> Her bir ,  -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+
+        <div 
+          class="carousel-item active"
+          data-bs-interval="30000"
+        >
+        <!-- data-bs-interval -> Her bir image için farklı bir süre de belirleyebiliriz.  -->
+          <img src="./img/slider1.jpg" class="d-block w-100" alt="img1">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-5">Popular Education</h2>
+            <p>Some representative placeholder content for the first slide.</p>
+            <!-- Custom Buttons ekliyoruz. -->
+            <div class="buttons">
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="./img/slider2.jpg" class="d-block w-100" alt="img2">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-5">Successful Future</h2>
+            <p>Some representative placeholder content for the second slide.</p>
+            <!-- Custom Buttons ekliyoruz. -->
+            <div class="buttons">
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+            
+          </div>
+        </div>
+        
+        <div class="carousel-item">
+          <img src="./img/slider3.jpg" class="d-block w-100" alt="img3">
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-5">Dream Job</h2>
+            <p>Some representative placeholder content for the third slide.</p>
+            <!-- Custom Buttons ekliyoruz. -->
+            <div class="buttons">
+              <button class="btn btn-danger">Start Now</button>
+              <button class="btn btn-warning">Register</button>
+            </div>
+            
+          </div>
+        </div>
+
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+    <main>
+      <!------------ SECTION-ABOUT ------------>
+      <section id="about" class="container bg-light p-3">
+        <h2 class="text-danger text-center display-6">ABOUT US</h2>
+        <div class="row justify-content-center text-center">
+          <div class="col-sm-12 col-md-6 col-lg-4">
+            <i class="fas fa-globe-americas fa-2x"></i>
+            <h4 class="display-6">Online Courses</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-5">
+            <i class="fas fa-headset fa-2x"></i>
+            <h4 class="display-6">Fultime Mentoring</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3">
+            <i class="fas fa-book-open fa-2x"></i>
+            <h4 class="display-6">Learn Yourself</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.
+          </div>
+        </div>
+      </section>
+
+      <!------------ INSTRUCTORS ------------>
+      <section id="instructors" class="container bg-dark p-2">
+        <h2 class="text-danger text-center display-6">OUR INSTRUCTORS</h2>
+        <div class="row g-3 justify-content-center">
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="img/teacher1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Josh Ren</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="socials d-flex justify-content-around">
+                  <!-- 
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a> 
+                  -->
+                  <a href="#"><i class="fa-brands fa-facebook-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin fa-2x text-danger"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="img/teacher2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bob Ken</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="socials d-flex justify-content-around">
+                  <!-- 
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a> 
+                  -->
+                  <a href="#"><i class="fa-brands fa-facebook-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin fa-2x text-danger"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="img/teacher3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jessica Sunny</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="socials d-flex justify-content-around">
+                  <!-- 
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a> 
+                  -->
+                  <a href="#"><i class="fa-brands fa-facebook-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin fa-2x text-danger"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="img/teacher4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jony Came</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="socials d-flex justify-content-around">
+                  <!-- 
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a> 
+                  -->
+                  <a href="#"><i class="fa-brands fa-facebook-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin fa-2x text-danger"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="img/teacher5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Osho</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="socials d-flex justify-content-around">
+                  <!-- 
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a> 
+                  -->
+                  <a href="#"><i class="fa-brands fa-facebook-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin fa-2x text-danger"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+            <div class="card">
+              <img src="img/teacher6.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Brandon White</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="socials d-flex justify-content-around">
+                  <!-- 
+                  <a href="#"><i class="fab fa-facebook-square"></i></a>
+                  <a href="#"><i class="fab fa-twitter-square"></i></a>
+                  <a href="#"><i class="fab fa-linkedin"></i></a> 
+                  -->
+                  <a href="#"><i class="fa-brands fa-facebook-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-google-plus-square fa-2x text-danger"></i></a>
+                  <a href="#"><i class="fa-brands fa-linkedin fa-2x text-danger"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+
+      <!------------ SECTION-STUDENTS ------------>
+      <section id="students" class="container bg-light p-3">
+        <h2 class="text-danger text-center display-6">OUR STUDENTS</h2>
+        <div class="row justify-content-center align-items-center text-center g-3">
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente veritatis dicta minus, architecto libero voluptates voluptas sed praesentium consequuntur, nulla accusantium ducimus provident explicabo, quasi vitae soluta amet sint iste odio laudantium quo hic molestias quidem sit! Veniam, iusto nulla.</p>
+            <button class="btn btn-danger">Learn More</button>
+          </div>
+          <div class="col-md-6">
+            <img src="./img/students1.png" width="70%" alt="students">
+          </div>
+        </div>
+
+      </section>
+
+      <!------------ SECTION-COURSES ------------>
+      <section id="courses" class="container bg-dark p-3">
+        <h2 class="text-danger text-center display-6">COURSES</h2>
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button 
+              class="nav-link active" 
+              id="pills-home-tab" 
+              data-bs-toggle="pill" 
+              data-bs-target="#fs-image" 
+              type="button" 
+              role="tab">
+                Full Stack
+              </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button 
+              class="nav-link" 
+              id="pills-profile-tab" 
+              data-bs-toggle="pill" 
+              data-bs-target="#ds-image" 
+              type="button" 
+              role="tab">
+                Data Science
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button 
+              class="nav-link" 
+              id="pills-contact-tab" 
+              data-bs-toggle="pill" 
+              data-bs-target="#dev-image" 
+              type="button" 
+              role="tab">
+                DevOps
+              </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+
+          <div 
+            class="tab-pane fade show active" 
+            id="fs-image" 
+            role="tabpanel" 
+            aria-labelledby="pills-home-tab">
+              <div class="row g-3">
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/fs1.jpg">
+                    <img src="./img/thumbnail/fs1.jpg" class="img-thumbnail" alt="fs1">
+                  </a>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/fs2.jpg">
+                    <img src="./img/thumbnail/fs2.jpg" class="img-thumbnail" alt="fs1">
+                  </a>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/fs3.jpg">
+                    <img src="./img/thumbnail/fs3.jpg" class="img-thumbnail" alt="fs1">
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/fs4.jpg">
+                    <img src="./img/thumbnail/fs4.jpg" class="img-thumbnail" alt="fs1">
+                  </a>
+                </div>
+
+              </div>
+          </div>
+
+          <div 
+            class="tab-pane fade" 
+            id="ds-image" 
+            role="tabpanel" 
+            aria-labelledby="pills-profile-tab">
+              <div class="row g-3">
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/ds1.jpg">
+                    <img src="./img/thumbnail/ds1.jpg" class="img-thumbnail" alt="ds1">
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/ds2.jpg">
+                    <img src="./img/thumbnail/ds2.jpg" class="img-thumbnail" alt="ds1">
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/ds3.jpg">
+                    <img src="./img/thumbnail/ds3.jpg" class="img-thumbnail" alt="ds1">
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/ds4.jpg">
+                    <img src="./img/thumbnail/ds4.jpg" class="img-thumbnail" alt="ds1">
+                  </a>
+                </div>
+
+              </div>
+          </div>
+
+          <div 
+            class="tab-pane fade" 
+            id="dev-image" 
+            role="tabpanel" 
+            aria-labelledby="pills-contact-tab">
+              <div class="row g-3">
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/ops1.jpg">
+                    <img src="./img/thumbnail/ops1.jpg" class="img-thumbnail" alt="dev1">
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/ops2.jpg">
+                    <img src="./img/thumbnail/ops2.jpg" class="img-thumbnail" alt="dev1">
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/ops3.jpg">
+                    <img src="./img/thumbnail/ops3.jpg" class="img-thumbnail" alt="dev1">
+                  </a>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                  <a data-fslightbox href="./img/thumbnail/ops4.jpg">
+                    <img src="./img/thumbnail/ops4.jpg" class="img-thumbnail" alt="dev1">
+                  </a>
+                </div>
+              
+              </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!------------ SECTION-CONTACT ------------>
+      <section id="contact" class="container bg-light p-3">
+        <h2 class="text-danger text-center display-6">CONTACT</h2>
+
+        <article id="form">
+          
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum dolore vel aliquam reiciendis suscipit placeat hic iste delectus, laboriosam doloribus!
+          </p>
+
+          <div class="row justify-content-center text-center g-3">
+            <div class="col-md-4">
+              <i class="fas fa-phone"></i>
+              <h5>Telephone</h5>
+              <a href="tel:+905356148349" target="_blank">+905356148349</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fab fa-whatsapp"></i>
+              <h5>Whatsapp</h5>
+              <a href="https://wa.me/+905356148349" target="_blank">+905356148349</a>
+            </div>
+            <div class="col-md-4">
+              <i class="fas fa-envelope"></i>
+              <h5>Email</h5>
+              <a href="mailto:umitarat8098@gmail.com" target="_blank">umitarat8098@gmail.com</a>
+            </div>
+          </div>
+
+          <form class="row g-3 mt-3">
+            <div class="col-md-6">
+              <input type="text" class="form-control" id="name" placeholder="Enter name">
+            </div>
+            <div class="col-md-6">
+              <input type="email" class="form-control" id="email" placeholder="Enter email">
+            </div>
+            <div class="col-12">
+              <input type="text" class="form-control" id="subject" placeholder="Enter subject">
+            </div>
+
+            <div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+              <label for="floatingTextarea">Enter your comments</label>
+            </div>
+
+            <div class="col-12 text-center">
+              <button type="submit" class="btn btn-danger" style="width: 7rem;">Submit</button>
+            </div>
+          </form>
+
+        </article>
+
+        <article id="location" class="d-flex justify-content-center mt-3">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50003.35520286891!2d27.054903333333333!3d38.455243333333334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbd90479744923%3A0x673994e48812c244!2zS2FyxZ_eWFrYS_EsHptaXI!5e0!3m2!1str!2str!4v1714000000000!5m2!1str!2str" 
+            width="90%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </article>
+
+      </section>
+
+    </main>
+
+    <!------------ FOOTER ------------>
+    <footer class="bg-dark text-light text-center p-4">
+      
+      <article>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </article>
+      
+      <article class="p-4 h6">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Copyright by Umit.
+      </article>
+    </footer>
+ 
+    <!------------ UP-BUTTON ------------>
+    <a class="up-btn" href="#body">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!------------ SCRIPTS ------------>
+    <!-- fslightbox.js (Image and Video Viewer Library)-->
+    <script src="./lib/fslightbox-basic-3.3.1/fslightbox.js"></script>
+
+    <!-- Bootstrap JS Linki -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
