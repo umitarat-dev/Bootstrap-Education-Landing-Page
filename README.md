@@ -27,7 +27,7 @@
 
 <p align="center">
   <a href="https://umitarat-dev.github.io/Bootstrap-Education-Landing-Page/">
-    <img src="img/spw.gif" alt="Project-Bootstrap-Single-Page-Website" width="800"/>
+    <img src="img/spw.gif" alt="Project-Bootstrap-Single-Page-Website" width="700"/>
   </a>
 </p>
 
